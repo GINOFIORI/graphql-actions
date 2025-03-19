@@ -29,12 +29,12 @@ jobs:
 
     - name: Build docker image
       run: |
-        docker build -t ginofiori/graphql-actions:0.0.2
+        docker build -t ginofiori/graphql-actions:0.0.2 .
 
         
     - name: Push docker image
       run: |
-        docker push ginofiori/graphql-actions:0.0.2 .
+        docker push ginofiori/graphql-actions:0.0.2
 #    - uses: actions/checkout@v4
 #    - name: Build the Docker image
 #      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
